@@ -4,4 +4,8 @@ out/
 *.class
 
 ### Mac OS ###
+.DS_Store.idea/
+out/
+*.iml
 .DS_Store
+*.class
