@@ -1,3 +1,5 @@
+package boj.p10811;
+
 import java.io.*;
 import java.util.*;
 
