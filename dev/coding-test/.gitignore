@@ -1,7 +1,0 @@
-### IntelliJ IDEA ###
-out/
-.idea/
-*.class
-
-### Mac OS ###
-.DS_Store
