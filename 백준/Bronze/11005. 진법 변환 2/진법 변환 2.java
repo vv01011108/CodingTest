@@ -8,25 +8,13 @@ public class Main {
 
         int N = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
-        char[] arr = new char[32];
-        int arrIndex = arr.length;
-        int total = N;
-
-        while (total > 0) {
-            if (total % B <= 9) {
-                arr[--arrIndex] = (char) (total % B + '0');
-                total /= B;
-            } else if (10 <= total % B && total % B <= 35) {
-                arr[--arrIndex] = (char) (total % B + 'A' - 10);
-                total /= B;
-            }
-        }
 
         StringBuilder sb = new StringBuilder();
-        for (int i = arrIndex; i < arr.length; i++) {
-            sb.append(arr[i]);
+        while (N > 0) {
+            int r = N % B;
+            sb.append(r < 10 ? (char)('0' + r) : (char)('A' + r -10));
+            N /= B;
         }
-
-        System.out.print(sb);
+        System.out.print(sb.reverse());
     }
 }
