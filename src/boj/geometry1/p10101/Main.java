@@ -1,0 +1,22 @@
+package boj.geometry1.p10101;
+
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int A = Integer.parseInt(br.readLine());
+        int B = Integer.parseInt(br.readLine());
+        int C = Integer.parseInt(br.readLine());
+
+        if (A == 60 && B == 60 && C == 60) {
+            System.out.print("Equilateral");
+        } else if (A + B + C == 180) {
+            if (A == B || A == C || B == C) {
+                System.out.print("Isosceles");
+            } else System.out.print("Scalene");
+        } else System.out.print("Error");
+
+    }
+}
