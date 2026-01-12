@@ -1,6 +1,5 @@
-package boj.random;
+package boj.random.p14136;
 
-import java.util.*;
 import java.io.*;
 
 public class Main {
