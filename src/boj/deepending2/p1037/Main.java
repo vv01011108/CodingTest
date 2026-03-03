@@ -1,4 +1,4 @@
-package boj.deepending2;
+package boj.deepending2.p1037;
 
 import java.io.*;
 import java.util.*;
